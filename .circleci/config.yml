@@ -29,7 +29,7 @@ jobs:
           name: docker code uploading  
           command: |   
             docker image ls	 
-            docker login -u $DOCKER_USER -p $DOCKER_PASS
+            docker login -u $DOCKER_USER -p $DOCKER_PWD
             docker tag my_hello_world $DOCKER_USER/my_hello_world
             docker push kapildockerlogin/my_hello_world:latest
             
