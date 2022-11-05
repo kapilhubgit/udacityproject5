@@ -1,0 +1,10 @@
+[
+	{
+		"ParameterKey": "EnvironmentName",
+		"ParameterValue": "CapstoneFinalPrj5"
+	},
+	{
+		"ParameterKey": "AMI",
+		"ParameterValue": "ami-08d4ac5b634553e16"
+	}
+]
