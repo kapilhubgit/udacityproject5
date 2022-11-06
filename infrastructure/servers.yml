@@ -17,7 +17,8 @@ Resources:
     WebInstance:
         Type: AWS::EC2::Instance
         Properties:
-          KeyName: udapeople
+          KeyName: udacity_prj5_key 
+          # This key help to connect. Change if key is different
           UserData:
               Fn::Base64: !Sub |
                   #!/bin/bash
@@ -35,7 +36,8 @@ Resources:
                   aws eks update-kubeconfig --name PROD --region us-east-1
           ImageId: !Ref AMI
           InstanceType: t2.medium          
-          KeyName: udapeople
+          KeyName: udacity_prj5_key 
+          # This key help to connect. Change if key is different
           BlockDeviceMappings:
           - DeviceName: "/dev/sdk"
             Ebs:
